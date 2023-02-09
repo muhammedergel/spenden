@@ -14,6 +14,8 @@ a {
 
 #page-title {
     margin-bottom: 6vh;
+    text-shadow: 5px 5px 10px purple;
+
 }
 
 .spende-card {
@@ -21,10 +23,33 @@ a {
     border-radius: 12px;
     padding: 12px;
     box-shadow: 0px 0px 10px 0px rgb(139, 74, 139);
-    width: fit-content;
+    min-width: none;
+    max-width: 50vw;
     margin: 0 auto;
+    margin-bottom: 18px;
 }
 
 .category {
     margin-top: 48px;
+}
+
+.spende-card-img {
+    max-width: 25%;
+}
+
+.white-background {
+    background-color: white;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+    .spende-card {
+        min-width: fit-content;
+        max-width: none;
+    }
+
+    .spende-card-img {
+        max-width: 50%;
+    }
 }
